@@ -15,7 +15,7 @@ static ssize_t device_read(struct file *, char *, size_t, loff_t *);
 static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
 
 #define DEVICE_NAME "encdev"    /* Device name as it appears in /proc/devices and /dev/  */
-#define BUF_LEN 128             /* Length of blocks in which the device works */
+#define BUF_LEN 16             /* Length of blocks in which the device works */
 
 static unsigned char device_buffer[BUF_LEN+1];
 static int num_opens = 0;

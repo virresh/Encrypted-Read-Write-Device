@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#define BUF_LEN 128
+#define BUF_LEN 16
 
 int main(int argc, char const *argv[])
 {
