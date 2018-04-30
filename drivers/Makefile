@@ -1,4 +1,5 @@
 obj-m += encdevdriver.o
+obj-m += decdevdriver.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules

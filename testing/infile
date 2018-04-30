@@ -9,13 +9,13 @@ encdevdriver: This driver initialises the encdev character device.
 The first write to this device results in initialisation of the Pre-Shared Key.
 Subsequent writes are stored and initialised into the module's buffer. Data
 should be immediately read after a write. Data and Key both are used in a block
-of 128 bytes. 
+of 128 bits. 
 
 decdevdriver: This driver initialises the decdev characted device.
 The first write to this device results in intialisation of the Pre-Shared Key.
 Subsequent writes to this device decodes the Data and stores decoded data in
 the modules buffer. Decoded data should be read immediately. Both Data and Key
-utilise a block size of 128 bytes.
+utilise a block size of 128 bits.
 
 Implementations:
 The block devices are initialised by their first write. The driver associates
